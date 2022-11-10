@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: firstapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: myfirstapp.eu-gb.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: firstapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: myfirstapp.eu-gb.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
